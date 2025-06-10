@@ -76,7 +76,7 @@ body {
 }
 
 
-/* Адаптация для экранов до 600px */
+
 @media (max-width: 600px) {
   .main-header {
     flex-direction: column;
