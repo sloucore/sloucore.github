@@ -1,0 +1,111 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #222;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.header-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.header-right ul {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header-right a:hover {
+  color: #00ffcc;
+}
+
+.main-section {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.page-section {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.back-link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* Адаптация для экранов до 600px */
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    margin-bottom: 0.5em;
+  }
+
+  .header-name {
+    font-size: 1em;
+  }
+
+  .header-right ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .header-right a {
+    font-size: 1em;
+  }
+
+  .main-section, .page-section {
+    padding: 2em 1em;
+  }
+
+  .back-link {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}
